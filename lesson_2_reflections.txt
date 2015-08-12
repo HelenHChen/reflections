@@ -3,3 +3,6 @@ Meta-data .git is created, this is needed to keep history info on your repositor
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Staging area is the "middle" between your working directory (on your hard drive) and your repository. It allows you to pick and choose which file(s) you want to commit at a time by committing only files in the staging area. This offers flexibility on what you want to commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can use git diff to see what in your working directory has changed and decide which of those changes can be considered as one logical change. You can then add those files to the staging area, use git diff --staged to make sure you're committing relevantly-grouped changes, and then commit them.
