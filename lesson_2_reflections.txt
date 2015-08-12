@@ -1,0 +1,5 @@
+What happens when you initialize a repository? Why do you need to do it?
+Meta-data .git is created, this is needed to keep history info on your repository (such as commit history).
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Staging area is the "middle" between your working directory (on your hard drive) and your repository. It allows you to pick and choose which file(s) you want to commit at a time by committing only files in the staging area. This offers flexibility on what you want to commit.
