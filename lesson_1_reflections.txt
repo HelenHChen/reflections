@@ -1,0 +1,23 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+It only showed lines that changed, which narrows down where I need to look for errors.
+This allowed me to quickly find the typo.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+If you introduced new code (or deleted lines of code) that then introduced bug, and you need to revert to older versions to get rid of the bug, you can just pull up the old version instead of manually reverting.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pros:  you won’t clutter your history with useless commits or commits that don’t make sense.
+Cons: if you forget to commit, you can risk losing your work. Also, you can risk rework if your code introduces new bugs but you’re not exactly sure what part of your massive-amounts of new code is responsible.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Some version control systems are geared towards more complicated usage that requires synchronizing across multiple files, while others are geared towards more simplistic usage where files are independent.
+
+How can you use the commands git log and git diff to view the history of files?
+Git log allows you to see in descending chronological order when your repository was committed as well as associated commit notes describing what changed.
+Git diff allows you to compare two different commits to see what lines of code were added or deleted.
+
+How might using version control make you more confident to make changes that could break something?
+You can always revert back to a previous working version! It’s like hitting ctrl-z :)
+
+Now that you have your workspace set up, what do you want to try using Git for?
+I want it to hold projects so recruiters and potential employers can go to my github page to see my code.
