@@ -6,3 +6,15 @@ Staging area is the "middle" between your working directory (on your hard drive)
 
 How can you use the staging area to make sure you have one commit per logical change?
 You can use git diff to see what in your working directory has changed and decide which of those changes can be considered as one logical change. You can then add those files to the staging area, use git diff --staged to make sure you're committing relevantly-grouped changes, and then commit them.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches will be especially helpful when you want to try different things or have different versions of your program. Branches can help by preventing changes on one track interfer with code in another track, giving you more flexibility and freedom to try different things.
+
+How do the diagrams help you visualize the branch structure?
+It gives a clean, easy way to see where branches started branching off from the master and one another, which can help us understand differences between the latest commits of each branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result was that merged files reflect both the additions and deletions from both branches. In other words, the newly committed files include all the changes from both branches since they "split" from their parent commit. The diagram helps us understand which commit is the parent, which then allows us to understand what lines of code were added and deleted versus the parent.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging saves time, but it can also create bugs in the code if seemingly-unconflicted code (according to git) actually do conflict to create bugs. Manual merging allows more control to prevent such bugs from being created. However, manual merging is time consuming. Git doesn't allow auto merging when the same area/lines of code were changed, thus forcing manual merging. Git "annotates" the code to identify areas of conflict, which can save time vs. going into the two versions of code to resolve every area with differences.
