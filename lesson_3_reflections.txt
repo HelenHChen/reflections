@@ -1,3 +1,20 @@
 When would you want to use a remote repository rather than keeping all your work local?
 Having a remote repository will be much better if you collaborate with others and/or if you work on multiple computers.
 This way, you don't have to worry about transfering files between computers and people.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+If multiple people can make commits to a repository, you may not want to pull their changes in while you're still working on the code. Once, you're done, you also want to manually pull and then manually merge.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Fork: a GitHub-specific functionality where you can copy another GitHub user's repository into yours. Whatever you commit and push onto GitHub will then only affect your repository, not the original.
+Clone: When you copy an entire repository, either from GitHub onto your local or local to local. By cloning an existing GitHub repository (instead of forking), your commits will show up on the repository you cloned if you do git push.
+Branch: Branching happens when a user wants to be able to work on collaborate code without worrying that the code has changed while he/she is still working and before he/she has had a chance to commit.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+This way, there will be a record of the state of the code before you made your changes on your local computer AND before others make and commmit changes on the remote. We need this record to see if there are conflicting changes between you and your collaborators that need to be resolved.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+I used to collaborate all the time with coworkers without Git or GitHub.
+We would update the same Excel files saved on the company's shared drive, and we would make sure the file is shared so we could all be in it at the same time. In theory that would work, but it was a pain to resolve conflict and also when the file would magically unshare itself!
+Microsoft also had this feature that allowed you to check out files so you can update and save it. It wasn't intuitive and people constantly kept files checked out and other people can't go into them.
+Git and GitHub is intimidating to learn, but once you get the hang of it I would use it over whatever else I was using before!
