@@ -18,3 +18,6 @@ I used to collaborate all the time with coworkers without Git or GitHub.
 We would update the same Excel files saved on the company's shared drive, and we would make sure the file is shared so we could all be in it at the same time. In theory that would work, but it was a pain to resolve conflict and also when the file would magically unshare itself!
 Microsoft also had this feature that allowed you to check out files so you can update and save it. It wasn't intuitive and people constantly kept files checked out and other people can't go into them.
 Git and GitHub is intimidating to learn, but once you get the hang of it I would use it over whatever else I was using before!
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+I would want to make changes in a separate branch when I collaborate with others and we want to look at each other's proposed changes before allowing them to be incorporated into the master. If I were working on my own, then having branches will be more trouble than it is worth, since it takes more time and effort to create branches and then merge them into the master.
